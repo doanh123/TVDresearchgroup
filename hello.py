@@ -28,3 +28,6 @@ def publication():
 def signin():
     return render_template('signin.html')
 
+@app.route('/login')
+def login():
+    pass
