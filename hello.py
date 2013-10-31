@@ -32,6 +32,8 @@ def publication():
 def signin():
     return render_template('signin.html')
 
-@app.route('/login')
+@app.route('/login', methods =['POST'])
 def login():
-    pass
+    if request.method == "POST":
+       if request.form['username'] == "foo" and request.form['password']="bar":
+            return render_template("welcome.html")
