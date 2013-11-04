@@ -36,7 +36,7 @@ def signin():
 @app.route('/login', methods =['POST'])
 def login():
     if request.method == "POST":
-        if request.form['username'] == "foo" and request.form['password'] == "bar":
+        if request.form['username'] == "tvd" and request.form['password'] == "gobears":
             return render_template("welcome.html")
 
-    return "WRONG PASSWORD"
+    return render_template('signin.html')
