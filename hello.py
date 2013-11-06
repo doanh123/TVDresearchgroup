@@ -38,7 +38,7 @@ def login():
     if request.method == "POST":
         if request.form['username'] == "tvd2013" and request.form['password'] == "gobears":
             return render_template("welcome.html")
-        if request.form['username'] == "tvdphase1" and request.form['password'] == "gobears1":
+        if request.form['username'] == "tvdphase1" and request.form['password'] == "gobears":
             return render_template("phase1.html")
 
     return render_template('signin.html')
