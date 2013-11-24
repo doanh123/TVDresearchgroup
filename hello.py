@@ -11,7 +11,7 @@ def index():
 
 @app.route('/index')
 def mainpage():
-    return render_template('indx.html')
+    return render_template('index.html')
 
 @app.route('/about')
 def about():
